@@ -2,6 +2,8 @@ package problem;
 
 import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
+import java.utils.HashMap;
+import java.utils.Map;
 
 public class Space {
     // World Space
@@ -48,7 +50,7 @@ public class Space {
                 static_obs.add(moving_zone);
             }
             else {
-                throw IllegalArguementException('at least one static_obstacle given was out of bounds')
+                throw IllegalArguementException('at least one movable_obstacle given was out of bounds')
             }
         }
         //Check Movable Boxes
@@ -60,7 +62,7 @@ public class Space {
                 static_obs.add(box_zone);
             }
             else {
-                throw IllegalArguementException('at least one static_obstacle given was out of bounds')
+                throw IllegalArguementException('at least one movable_box given was out of bounds')
             }
         }
     }
